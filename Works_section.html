@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aishly Jain Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <style>
+    .active {
+    color: #7D4DFF; 
+    font-weight: bold; 
+    border-bottom: 2px solid #7D4DFF;
+}
+    body {
+        
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Century Gothic';
+    color: #333;
+    background: linear-gradient(45deg, rgb(226, 213, 255), rgb(238, 199, 243), rgb(240, 214, 255), #fcfcfc);
+    background-size: 400% 400%; /* Increase the size for animation */
+    animation: gradient-animation 15s ease infinite; /* Animation properties */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+    header {
+        margin-top: 40px;
+        margin-left: 150px;
+        margin-right: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        background-color: #FDF8FF;
+        border: 2px solid #7D4DFF;
+        border-radius: 100px;
+    }
+ @font-face {
+        font-family: 'CustomFont'; 
+        src: url('against\ regular.ttf') format('truetype');
+        font-style: normal;
+    }
+    
+
+    /* Swiper styles */
+#tranding {
+    padding: 2px; 
+}
+
+.tranding-slider {
+    height: 30rem; 
+    padding: 1rem 0; 
+    position: relative;
+}
+
+.tranding-slide {
+    width: 25rem; 
+    height: 30rem; 
+    position: relative;
+}
+
+.tranding-slide .tranding-slide-img img {
+    width: 25rem; 
+    height: 30rem; 
+    border-radius: 1rem; 
+    object-fit: cover;
+}
+
+    .tranding-slider-control .slider-arrow {
+        
+        background: var(--white);
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        left: 42%;
+        transform: translateX(-42%);
+    }
+
+    .tranding-slider-control .slider-arrow ion-icon {
+        position: relative;
+        font-size: 2rem;
+        color: #222224;
+    }
+
+    .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+        background: #7801ff; 
+    }
+  </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <h1>Aishly Jain</h1>
+            </a>
+        </div>
+        <div class="navlinks">
+            <nav>
+                <ul>
+                    <li><a href="Resume Aishly.jpg" download="Resume">Resume</a></li>
+                    <li><a href="Worksec.html" class="active">Works</a></li>
+                    <li><a href="https://medium.com/@aishly1606">Blog</a></li>
+                    <li><a href="About me page.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        <h1 style="text-align: center; padding-top: 15px; color: #512562 ;">Project Gallery</h1>
+        <!-- Swiper Section -->
+        <section id="tranding">
+          <div class="container">
+            <div class="swiper tranding-slider">
+              <div class="swiper-wrapper">
+               
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="works1.jpg" alt="Tranding">
+                  </div>
+                </div>
+              
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="works2.jpg" alt="Tranding">
+                  </div>
+                </div>
+               
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="works3.png" alt="Tranding">
+                  </div>
+                </div>
+              
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="works4.png" alt="Tranding">
+                  </div>
+                </div>
+              
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="works5.png" alt="Tranding">
+                  </div>
+                </div>
+              
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="works6.png" alt="Tranding">
+                  </div>
+                </div>
+               
+                <div class="swiper-slide tranding-slide">
+                  <div class="tranding-slide-img">
+                    <img src="works7.png" alt="Tranding">
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="tranding-slider-control">
+               
+                <div class="swiper-pagination"></div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- End of Swiper Section -->
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var TrandingSlider = new Swiper('.tranding-slider', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          loop: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }
+        });
+    </script>
+</body>
+
+</html>
