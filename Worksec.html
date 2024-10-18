@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aishly Jain Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <style>
+
+    body{
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .active {
+    color: #7D4DFF; /* Change the color to make it stand out */
+    font-weight: bold; /* Bold to highlight the active section */
+    border-bottom: 2px solid #7D4DFF; /* Add a border to the bottom */
+}
+    .absolute{
+        position: absolute;
+        top: 50px !important;
+        inset: 0;
+        justify-content: center;
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .justify-center{
+        justify-content: center;
+    }
+    .bg-shape1{
+        width: 400px;
+        height: 400px;
+        border-radius: 9999px;
+        position: relative;
+        animation: one 10s infinite;
+        z-index: -1;
+    }
+    .bg-shape2{
+        width: 300px;
+        height: 300px;
+        border-radius: 9999px;
+        position: relative;
+        animation: two 10s infinite;
+        z-index: -1;
+    }
+
+    @keyframes one{
+    0%{left: 0px; top: 0px;}
+    25%{left: -100px; top: 70px;}
+    50%{left: 20px; top: 150px;}
+    75%{left: 50px; top: 100px;}
+    100%{left: 0px; top: 0px;}
+    }
+    @keyframes two{
+    0%{left: 0px; top: 0px;}
+    25%{left: -100px; top: 70px;}
+    50%{left: 20px; top: 150px;}
+    75%{left: 50px; top: 100px;}
+    100%{left: 0px; top: 0px;}
+    }
+    .opacity-50{
+        opacity: .5;
+    }
+    .bg-blur{
+        filter: blur(90px);
+    }
+    .bg-primary{
+        background-color: rgb(183, 82, 255);
+    }
+    .bg-teal{
+        background-color: rgb(223, 28, 253);
+    }
+    .bg-purple{
+        background-color: rgb(140, 0, rgb(170, 0, 255));
+    }x
+    header {
+        margin-top: 40px;
+        margin-left: 150px;
+        margin-right: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        background-color: #FDF8FF;
+        border: 2px solid #7D4DFF;
+        border-radius: 100px;
+    }
+
+    .view-works-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: #fff;
+        background-color: #7D4DFF;
+        border-radius: 50px;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+        border: 2px solid transparent;
+        margin-top: 20px;
+    }
+
+    .view-works-btn:hover {
+        background-color: #5639cc;
+        border-color: #7D4DFF;
+    }
+
+    .view-works-btn .arrow {
+        margin-left: 10px;
+        transition: margin-left 0.3s ease;
+    }
+
+    .view-works-btn:hover .arrow {
+        margin-left: 20px;
+    }
+
+    /* Centering the Works section and button */
+    .works-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .Works h2 {
+        font-size: 32px;
+        color: #512562;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="absolute">
+    <div class="absolute inset-0 justify-center">
+        <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+        <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+        <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
+    </div>
+    
+</div>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <h1>Aishly Jain</h1>
+            </a>
+        </div>
+        <div class="navlinks">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Resume</a></li>
+                    <li><a href="Worksec.html" class="active">Works</a></li>
+                    <li><a href="https://medium.com/@aishly1606">Blog</a></li>
+                    <li><a href="About me page.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Works Section -->
+    <div class="works-container">
+        <div class="Works">
+            <a href="Works_section.html" style="text-decoration: none;">
+                <h2>Works</h2>
+            </a>
+        </div>
+
+        <a href="Works_section.html" class="view-works-btn">
+            View Works
+            <span class="arrow">→</span>
+        </a>
+    </div>
+
+</body>
+
+</html>
