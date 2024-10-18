@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aishly Jain Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="js.js">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
+    
+     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+     <script src="https://unpkg.com/scrollreveal"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body{
+            background-color: #FAF4E4;
+        }
+        img {
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin: 0 auto 40px; 
+            padding: 10px;
+            
+        }
+
+        .img1{
+            padding-top: 40px;
+        }
+        .navlinks :hover {
+    color: #7D4DFF;
+    font-weight: 60;
+
+
+}
+
+
+header {
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #FDF8FF;
+    border: 2px solid #7D4DFF;
+    border-radius: 100px;
+}
+
+.active {
+    color: #7D4DFF; /* Change the color to make it stand out */
+    font-weight: bold; /* Bold to highlight the active section */
+    border-bottom: 2px solid #7D4DFF; /* Add a border to the bottom */
+}
+
+@font-face {
+    font-family: 'CustomFont'; /* Custom name for your font */
+    src: url('against\ regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+.about-text {
+    color: #512562;
+    font-family: 'Century Gothic';
+    font-size: 32px;
+}
+
+.text {
+    font-size: 24px;
+}
+
+header .logo h1 {
+    margin-left: 30px;
+    font-size: 24px;
+    color: #512562;
+    font-family: 'CustomFont', sans-serif;
+    text-decoration: none;
+}
+
+
+header nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 7px;
+    display: flex;
+    font-family: 'Century Gothic';
+}
+
+header nav ul li {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #512562;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.titleglide{
+    color: #512562;
+    padding-top: 40px;
+}
+.tags span {
+    background-color: #ffffff;
+    color: #1F1F1F;
+    border: 1px solid #0d0d0d;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+    </style>
+</head>
+<body>
+     <!-- Header Section -->
+
+    <header>
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <h1>Aishly Jain</h1>
+            </a>
+        </div>
+        <div class="navlinks">
+            <nav>
+                <ul>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <center><h1 class="titleglide"> RecyclEase</h1>
+    <div class="tags">
+        <span>Service Design</span>
+        <span>Sustainability-tech</span>
+        <span>B2B</span>
+        
+    </div></center>
+   <br>
+   <br>
+   <center><h2> Research</h2></center>
+    <img src="Frame 22.jpg" alt="RecyclEase">
+    <img src="Frame 23.jpg" alt="RecyclEase">
+    <img src="Frame 24.jpg" alt="RecyclEase">
+
+    
+
+
+    <button id="backToTopBtn">↑ Back to Top</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        ScrollReveal().reveal('.reveal', {
+            delay: 200,
+            distance: '50px',
+            duration: 600,
+            origin: 'bottom',
+            easing: 'ease-out',
+        });
+    });
+
+        // Get the button
+const backToTopBtn = document.getElementById('backToTopBtn');
+
+// Show the button when user reaches the bottom of the page
+window.onscroll = function() {
+  // Check if user has scrolled to the bottom
+  if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+    backToTopBtn.classList.add('show');
+    backToTopBtn.classList.remove('hide');
+  } else {
+    backToTopBtn.classList.add('hide');
+    backToTopBtn.classList.remove('show');
+  }
+};
+
+// Scroll back to the top when the button is clicked
+backToTopBtn.addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+
+    </script>
+</body>
+</html>
